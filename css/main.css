@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+div, p, form, input, a ,span, button {
+    box-sizing: border-box;
+}
+.reviews {
+    width: 1140px;
+    height: 1083.46px;
+    margin: auto;
+    background: #323232;
+}
+.container {
+    padding: 100px 50px;
+}
+/* Несколько отзывов о нас */
+
+.reviews__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+h3 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 35px;
+    letter-spacing: -0.04em;
+}
+.pages {
+    width: 117.1px;
+    height: 24.29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pages button.owl-dot {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    background-color: #323232;
+    border: 0;
+}
+.pages button.owl-dot:active {
+    color: #FFFFFF;
+    opacity: 1;
+    border-bottom: 3px solid #FFFFFF;
+}
+.owl-dots {
+    display: none;
+    text-align: center;
+}
+.owl-dots button.owl-dot {
+    text-decoration: none;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    background-color: #323232;
+    border: 0;
+}
+.owl-dots button.owl-dot:active {
+    color: #FFFFFF;
+}
+.owl-carousel button.owl-dot:last-child {
+    margin-right: 0px;
+}
+.owl-carousel button.owl-dot.active {
+    opacity: 1;
+}
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+.reviews__cards {
+    display: flex;
+    margin-bottom: 36.55px;
+}
+.reviews__card {
+    width: 333px;
+    height: 305.34px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #000000;
+    margin-right: 25px;
+    padding: 25px;
+}
+.reviews__card:last-child {
+    margin-right: 0;
+}
+.card-header {
+    display: flex;
+}
+.card-img {
+    content: ''; 
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../img/konstantin.png);
+    background-repeat: no-repeat round;
+}
+.card-header__text {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    width: 221px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 10.53px;
+}
+.subtext{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #A0A0A0;
+}
+.reviews__card p {
+    font-size: 15px;
+    line-height: 19px;
+}
+.btn {
+    text-decoration: none;
+    width: 283px;
+    height: 46.11px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+.reviews__fullcard {
+    display: flex;
+    position: relative;
+    width: 686.5px;
+    height: 463.58px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-top: 34.47px;
+    padding-left: 36.5px;
+}
+.reviews__fullcard::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; 
+    top: -40px; /* Положение треугольника */
+    border: 20px solid transparent; /* Прозрачные границы */
+    border-bottom: 30px solid #ffffff; /* Добавляем треугольник */
+}    
+.reviews__fullcard img {
+    width: 90.02px;
+    height: 90.02px;
+    border-radius: 50%;
+    margin-right: 29.88px;
+}
+.reviews__fullcard_text {
+    width: 474.5px;
+    height: 263.38px;
+}
+.reviews__fullcard p {
+    font-size: 15px;
+    line-height: 19px;
+}
+.contacts{
+    color: #ABABAB;
+}
+.wa-btn {
+    color:#589f21;
+}
+.youtube-btn {
+    color: #6c3333;
+}
+@media screen and (max-width: 992px) {
+	.reviews {
+        width: 740px;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 32px 15px;
+    }
+    .pages {
+        display: none;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: start;
+        width: 740px;
+    }
+    .reviews__card {
+        width: 278.74px;
+        height: auto;
+        padding: 14px 16px;
+    }
+    .text {
+        width: 168.23px;
+    }
+    .subtext {
+        width: 168.23px;
+    }
+    .btn {
+        width: auto;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.reviews {
+		width: 520px;
+    }
+    .controls {
+        width: 520px;
+    }
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.reviews {
+		width: auto;
+    }
+    .controls {
+        width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
